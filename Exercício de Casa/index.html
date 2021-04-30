@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+    
+    </header>
+        <section class="wrapper">
+            
+            <div class="news">
+               <h1 class="news_tititle" id="formTitle">My Books</h1>
+               <form action="" class="news_form" onsubmit="exibirDados(event)">
+                    <div class= "new_form-group">
+                        <label for="autor" class="news_label">Autor:</label>
+                        <input type="text" class="news_imput" id="author" placeholder="Insira aqui o nome do autor">
+                        <label for="autor" class="news_label">Título:</label>
+                        <input type="text" class="news_imput" id="title" placeholder="Insira o título aqui">
+                        <label for="autor" class="news_label">ISBN:</label>
+                        <input type="text" class="news_imput" id="isbn" placeholder="Insira aqui o ISBN">
+                        <label for="data-publicacao" class="news_label">Data de Publicação:</label>
+                        <input type="date" class="news_imput" id="date-p">
+                    </div>
+                    <div class="news_form-group">
+                        <input type="submit" class="news_button" name="enviar" id="botaoDeEnviar">
+                    </div>
+                    <div id="resposta" class="resposta_box resposta_list">
+                    </div>
+                
+                </form>
+            </div>
+            <div>
+            
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Data de Publicação</th>
+                    <th>ISBN</th>
+                    
+            </thead>
+            <tbody id="texto">
+ 
+ 
+            </tbody>
+        </table>
+
+            </div>
+        </section>
+        <footer>
+            <p>&copy;Carla Oliveira {Reprograma}</p>
+        </footer>
+    <script src="script/script.js"></script>
+    </body>
+    </html>
+</body>
+</html>
+
